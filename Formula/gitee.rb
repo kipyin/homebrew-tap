@@ -5,16 +5,16 @@
 class Gitee < Formula
   desc "A gh-like command-line client for Gitee"
   homepage "https://github.com/kipyin/gitee-cli"
-  version "0.1.4"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kipyin/gitee-cli/releases/download/v#{version}/gitee-aarch64-apple-darwin-v#{version}.tar.xz"
-      sha256 "f610691556f46d09e1e933cdbe4e4a8eb201247dd12b717f0f3df187235e4515"
+      sha256 "40559f63259a5720589d53050b0e2ee6c01ef2195108bef96d72dec835155702"
     else
       url "https://github.com/kipyin/gitee-cli/releases/download/v#{version}/gitee-x86_64-apple-darwin-v#{version}.tar.xz"
-      sha256 "7ea24e038c0efe6840a906ea2f86c7af2bb9068d5a428ed41aac02965d5d98d2"
+      sha256 "f460c1c596d5950b43987b720c0a82ec306af50464c6a678153843e1c0344595"
     end
   end
 
